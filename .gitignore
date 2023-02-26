@@ -24,3 +24,6 @@ zig_nif_example-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Zig cache
+zig-cache/
