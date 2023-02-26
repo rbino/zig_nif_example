@@ -1,21 +1,8 @@
-# ZigNifExample
+# Zig NIF example
 
-**TODO: Add description**
+A simple example showing how to call Zig from Elixir.
 
-## Installation
+`zig_src/zig_math.zig` contains the `add` function, that gets compiled to a NIF shared library using
+`build.zig` and the `build_dot_zig` Mix compiler to a NIF.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `zig_nif_example` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:zig_nif_example, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/zig_nif_example>.
-
+Then the `ZigNifExample` module loads the NIF and allows to call it.
